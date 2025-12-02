@@ -11,7 +11,7 @@
 :root {
   --background: #ffffff; /* bg-white */
   --foreground: #1D1D1D; /* text-black */
-  --font-red-hat-display: 'Red Hat Display', sans-serif;
+  --font-red-hat-display: 'Red Hat Display', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   --font-lato: 'Lato', sans-serif;
 }
 

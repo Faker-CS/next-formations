@@ -4,7 +4,7 @@ import React from "react";
 
 export function HH({ children, className = "", ...props }) {
   return (
-    <h1 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 italic font-normal text-[80px] leading-[84px] ${className}`} {...props}>
+    <h1 className={`font-red-hat-display tracking-[0.02em] m-0 italic font-normal text-[80px] leading-[84px] ${className}`} {...props}>
       {children}
     </h1>
   );
@@ -12,7 +12,7 @@ export function HH({ children, className = "", ...props }) {
 
 export function H1({ children, className = "", ...props }) {
   return (
-    <h1 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-normal text-[60px] leading-[79px] not-italic text-white max-[800px]:text-[30px] max-[800px]:leading-[37px] ${className}`} {...props}>
+    <h1 className={`font-red-hat-display tracking-[0.02em] m-0 font-normal text-[60px] leading-[79px] not-italic text-white max-[800px]:text-[30px] max-[800px]:leading-[37px] ${className}`} {...props}>
       {children}
     </h1>
   );
@@ -20,7 +20,7 @@ export function H1({ children, className = "", ...props }) {
 
 export function H2({ children, className = "", ...props }) {
   return (
-    <h2 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-light text-[60px] leading-[76px] max-[800px]:text-[22px] max-[800px]:leading-normal ${className}`} {...props}>
+    <h2 className={`font-red-hat-display tracking-[0.02em] m-0 font-light text-[60px] leading-[76px] max-[800px]:text-[22px] max-[800px]:leading-normal ${className}`} {...props}>
       {children}
     </h2>
   );
@@ -28,7 +28,7 @@ export function H2({ children, className = "", ...props }) {
 
 export function H3({ children, className = "", ...props }) {
   return (
-    <h3 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-semibold text-[58px] leading-normal max-[800px]:text-[28px] max-[800px]:leading-normal ${className}`} {...props}>
+    <h3 className={`font-red-hat-display tracking-[0.02em] m-0 font-semibold text-[58px] leading-normal max-[800px]:text-[28px] max-[800px]:leading-normal ${className}`} {...props}>
       {children}
     </h3>
   );
@@ -36,7 +36,7 @@ export function H3({ children, className = "", ...props }) {
 
 export function GT({ children, className = "", ...props }) {
   return (
-    <h3 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-semibold text-[58px] leading-normal ${className}`} {...props}>
+    <h3 className={`font-red-hat-display tracking-[0.02em] m-0 font-semibold text-[58px] leading-normal ${className}`} {...props}>
       {children}
     </h3>
   );
@@ -44,7 +44,7 @@ export function GT({ children, className = "", ...props }) {
 
 export function H4({ children, className = "", ...props }) {
   return (
-    <h4 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-light text-[40px] leading-[100px] ${className}`} {...props}>
+    <h4 className={`font-red-hat-display tracking-[0.02em] m-0 font-light text-[40px] leading-[100px] ${className}`} {...props}>
       {children}
     </h4>
   );
@@ -52,7 +52,7 @@ export function H4({ children, className = "", ...props }) {
 
 export function H5({ children, className = "", ...props }) {
   return (
-    <h5 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-light text-[30px] leading-normal ${className}`} {...props}>
+    <h5 className={`font-red-hat-display tracking-[0.02em] m-0 font-light text-[30px] leading-normal ${className}`} {...props}>
       {children}
     </h5>
   );
@@ -68,7 +68,7 @@ export function H6({ children, className = "", ...props }) {
 
 export function MH3({ children, className = "", ...props }) {
   return (
-    <h3 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-semibold text-[28px] leading-normal ${className}`} {...props}>
+    <h3 className={`font-red-hat-display tracking-[0.02em] m-0 font-semibold text-[28px] leading-normal ${className}`} {...props}>
       {children}
     </h3>
   );
@@ -76,7 +76,7 @@ export function MH3({ children, className = "", ...props }) {
 
 export function MH1({ children, className = "", ...props }) {
   return (
-    <h1 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-normal text-[30px] leading-[37px] ${className}`} {...props}>
+    <h1 className={`font-red-hat-display tracking-[0.02em] m-0 font-normal text-[30px] leading-[37px] ${className}`} {...props}>
       {children}
     </h1>
   );
@@ -84,7 +84,7 @@ export function MH1({ children, className = "", ...props }) {
 
 export function MH7({ children, className = "", ...props }) {
   return (
-    <h6 className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-normal text-[20px] leading-normal ${className}`} {...props}>
+    <h6 className={`font-red-hat-display tracking-[0.02em] m-0 font-normal text-[20px] leading-normal ${className}`} {...props}>
       {children}
     </h6>
   );
@@ -92,7 +92,7 @@ export function MH7({ children, className = "", ...props }) {
 
 export function P({ children, className = "", ...props }) {
   return (
-    <p className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-normal text-[16px] leading-[26px] text-white ${className}`} {...props}>
+    <p className={`font-red-hat-display tracking-[0.02em] m-0 font-normal text-[16px] leading-[26px] text-white ${className}`} {...props}>
       {children}
     </p>
   );
@@ -140,7 +140,7 @@ export function MBtnMenu({ children, className = "", ...props }) {
 
 export function B8({ children, className = "", ...props }) {
   return (
-    <span className={`font-['Red_Hat_Display'] tracking-[0.02em] m-0 font-normal text-[8px] leading-normal ${className}`} {...props}>
+    <span className={`font-red-hat-display tracking-[0.02em] m-0 font-normal text-[8px] leading-normal ${className}`} {...props}>
       {children}
     </span>
   );

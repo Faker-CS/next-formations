@@ -43,8 +43,8 @@ module.exports = {
       },
       // Fonts
       fontFamily: {
-        'red-hat-display': ["'Red Hat Display'", 'sans-serif'],
-        'lato': ["'Lato'", 'sans-serif'],
+        'red-hat-display': ["'Red Hat Display'", 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial'],
+        'lato': ["'Lato'", 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial'],
       },
       // Font Sizes
       fontSize: {

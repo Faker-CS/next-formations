@@ -1,0 +1,17 @@
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import Navbar from "@/components/layout/navbar";
+
+export default function Methode() {
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <div className="flex flex-col gap-4 p-8 bg-gray-900 min-h-screen">
+        <h1 className="text-white text-4xl">Méthode</h1>
+        <p className="text-white">Content for Méthode page.</p>
+      </div>
+      <Footer />
+    </>
+  );
+}

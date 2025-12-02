@@ -1,11 +1,11 @@
 export const NAVBAR_LINKS = [
-  { href: "#formations", label: "Formations", subDrawerId: "formations", variant: "highlight" },
-  { href: "#entrepreneuriat", label: "Entreprenariat", variant: "highlight" },
-  { href: "#apropos", label: "À propos", variant: "highlight" },
-  { href: "#methode", label: "Méthode", variant: "highlight" },
-  { href: "#rejoindre", label: "Nous rejoindre", variant: "highlight" },
-  { href: "#enseigner", label: "Enseigner chez nous", variant: "secondary" },
-  // { href: "#contact", label: "Nous contacter", variant: "highlight" },
+  { href: "/formations", label: "Formations", subDrawerId: "formations", variant: "highlight" },
+  { href: "/entrepreneuriat", label: "Entreprenariat", variant: "highlight" },
+  { href: "/apropos", label: "À propos", variant: "highlight" },
+  { href: "/methode", label: "Méthode", variant: "highlight" },
+  { href: "/rejoindre", label: "Nous rejoindre", variant: "highlight" },
+  { href: "/enseigner", label: "Enseigner chez nous", variant: "secondary" },
+  // { href: "/contact", label: "Nous contacter", variant: "highlight" },
 ];
 
 export const NAVBAR_ACTIONS = [
