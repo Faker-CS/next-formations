@@ -22,7 +22,7 @@ export default function DesktopNavbar({ links }) {
   }, [accountOpen]);
 
   return (
-    <div className="navbar__menu flex flex-row justify-end items-center p-0 gap-[18px] isolate m-auto w-[1024px] h-[48px] flex-none order-1 flex-grow-0 z-[100001] xl:w-auto xl:gap-[12px] lg:gap-[12px]">
+    <div className="navbar__menu flex flex-row justify-end items-center p-0 gap-[20px] isolate m-auto w-[1384px] h-[38px] flex-none order-1 flex-grow-0 z-[100001] xl:w-auto xl:gap-[14px] lg:gap-[14px]">
       {links.map((link) => {
         if (link.subDrawerId) {
           return <Dropdown key={link.label} link={link} />;
@@ -32,14 +32,14 @@ export default function DesktopNavbar({ links }) {
           <Link
             key={link.label}
             href={link.href}
-            className={`navbar__menu-btn flex flex-row justify-center items-center px-[18px] py-[12px] gap-[10px] w-auto h-[34px] bg-white rounded-[16px] font-lato font-bold text-[14px] leading-[14px] tracking-[0.02em] text-[#1b365e] no-underline flex-none flex-grow-0 z-[7] hover:bg-[#f5f5f5] active:bg-[#d9d9d9] active:border active:border-[#40bfde] active:rounded-[24px] lg:px-[12px] lg:py-[8px] lg:text-[11px] md:px-[8px] md:py-[6px] md:text-[10px] ${link.variant === 'highlight' ? 'navbar__menu-btn--highlight hover:bg-[#c7f8ff] hover:rounded-[24px] hover:text-[#1b365e] focus:bg-[#c7f8ff] focus:text-[#1B365E] focus:font-bold focus:border-t-[20px] focus:border-t-[#c7f8ff] focus:border-b-0 focus:border-l-0 focus:border-r-0 focus:rounded-t-[20px] focus:relative focus:z-[100001] focus:shadow-[0_2px_8px_rgba(27,54,94,0.08)] focus:after:content-[""] focus:after:absolute focus:after:bottom-[-18px] focus:after:left-0 focus:after:right-0 focus:after:h-[20px] focus:after:bg-[#c7f8ff]' : ''} ${link.variant === 'secondary' ? 'navbar__menu-btn--secondary bg-[#efefef] rounded-[28px] text-[#1b515e] active:bg-[#d9d9d9] active:border active:border-[#40bfde] active:rounded-[24px] hover:bg-[#c7f8ff] hover:rounded-[24px] hover:text-[#1b365e]' : ''}`}
+            className={`navbar__menu-btn flex flex-row justify-center items-center px-[20px] py-[14px] gap-[10px] w-auto h-[36px] bg-white rounded-[48px] font-lato font-bold text-[14px] leading-[14px] tracking-[0.02em] text-[#1b365e] no-underline flex-none flex-grow-0 z-[7] hover:bg-[#c7f8ff] active:bg-[#d9d9d9] active:border active:border-[#40bfde] active:rounded-[24px] lg:px-[14px] lg:py-[10px] lg:text-[11px] md:px-[10px] md:py-[8px] md:text-[10px] ${link.variant === 'highlight' ? 'navbar__menu-btn--highlight hover:bg-[#c7f8ff] hover:rounded-[24px] hover:text-[#1b365e] focus:bg-[#c7f8ff] focus:text-[#1B365E] focus:font-bold focus:border-t-[20px] focus:border-t-[#c7f8ff] focus:border-b-0 focus:border-l-0 focus:border-r-0 focus:rounded-t-[20px] focus:relative focus:z-[100001] focus:shadow-[0_2px_8px_rgba(27,54,94,0.08)] focus:after:content-[""] focus:after:absolute focus:after:bottom-[-18px] focus:after:left-0 focus:after:right-0 focus:after:h-[20px] focus:after:bg-[#c7f8ff]' : ''} ${link.variant === 'secondary' ? 'navbar__menu-btn--secondary bg-[#efefef] rounded-[28px] text-[#1b515e] active:bg-[#d9d9d9] active:border active:border-[#40bfde] active:rounded-[24px] hover:bg-[#c7f8ff] hover:rounded-[24px] hover:text-[#1b365e]' : ''}`}
           >
             {link.label}
           </Link>
         );
       })}
 
-      <div className="navbar__actions flex flex-row items-center p-0 gap-[14px] w-[283px] h-[38px] flex-none order-7 flex-grow-0 z-0 lg:w-auto md:justify-center">
+      <div className="navbar__actions flex flex-row items-center p-0 gap-[24px] w-[283px] h-[38px] flex-none order-7 flex-grow-0 z-0 lg:w-auto md:justify-center">
         <Link href="/contact" className="navbar__contact-btn flex flex-row justify-center items-center px-[18px] py-[10px] gap-[10px] w-[121px] h-[34px] bg-[#ffe4b4] rounded-[24px] font-lato font-bold text-[11.9px] leading-[14px] tracking-[0.02em] text-[#1b365e] no-underline flex-none order-0 flex-grow-0 transition-all hover:bg-[#ffd89b] active:bg-[#fc7f16] active:text-white">
           Nous contacter
         </Link>
