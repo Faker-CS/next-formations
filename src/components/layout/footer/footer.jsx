@@ -3,120 +3,228 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-auto pt-10 bg-[#1b365e] text-white md:h-[413px]">
-      <div className="max-w-[1440px] mx-auto p-0 px-6 md:pt-7 md:px-0">
-        <div className="flex flex-col gap-10 md:flex-row md:gap-10">
-          <div className="flex flex-col gap-10 mb-[1px] border-b-0 md:flex-row md:gap-10 md:border-b md:border-[#c7f8ff] md:mb-[110px]">
-            <div className="flex flex-col items-start gap-4 w-full md:flex-[0_0_auto]">
-              <div className="relative w-full max-w-full flex flex-col-reverse gap-3 md:w-[242px] md:h-auto md:mb-0 md:flex-col">
-                <Image src="/assets/images/logo-SF-H.png" alt="Spot Formations" width={221} height={15} className="relative bottom-0 right-0 mt-0 mb-0 md:mt-[-10px] md:mb-[14px]" />
-                <Image
-                  src="/assets/images/chloe-photo.svg"
-                  alt="Formation"
-                  width={221}
-                  height={125}
-                  className="w-full h-auto object-cover"
-                />
+    <footer className="relative w-full h-auto md:h-[413px] pt-10 bg-[#1b365e] text-white">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
+        <Image
+          src="/assets/images/logo-SF-H.png"
+          alt="Spot Formations"
+          width={221}
+          height={15}
+          className="absolute mb-4 md:mb-0 md:left-[1.94%] md:right-[82.71%] md:top-[7.99%] md:bottom-[88.38%]"
+        />
+        <div className="flex flex-col gap-10 md:flex-row md:gap-6 lg:gap-8  md:bottom-[-88.38%]">
+          {/* Left section with image and description */}
+          <div className="flex flex-col gap-10 md:flex-row md:gap-6 lg:gap-8 md:flex-shrink-0">
+            {/* Image with language selector */}
+            <div className="flex flex-col items-start gap-4 w-full md:w-[242px] bottom-66">
+              <Image
+                src="/assets/images/chloe-photo.svg"
+                alt="Formation"
+                width={242}
+                height={137}
+                className="w-full h-auto object-cover"
+              />
+              <div
+                aria-hidden="true"
+                className="hidden md:block w-[536px] h-[1px] bg-white/20 ml-4 md:ml-[90px] self-center"
+              ></div>
+
+              {/* Language selector below image with divider */}
+              <div className="flex items-center gap-3 text-white mt-4 w-full md:items-center">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/assets/svgs/globe-solid-2.svg"
+                    alt="Language Icon"
+                    width={20}
+                    height={20}
+                    className="w-5 h-5"
+                  />
+                  <span className="font-lato text-[14px] text-white">
+                    Français (FR)
+                  </span>
+                </div>
               </div>
             </div>
-            
-            <div className="flex-none w-full text-left md:flex-[0_0_270px]">
-              <h3 className="font-['Red_Hat_Display'] font-bold text-[14px] leading-[20px] tracking-[0.02em] text-white my-[18px_0_8px_0]">
+
+            {/* Description text */}
+            <div className="w-full md:w-[270px] text-left">
+              <h3 className="font-['Red Hat Display', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'] font-bold text-[14px] leading-[20px] tracking-[0.02em] text-white mb-2">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
               </h3>
-              <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-2">
+              <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white mb-2">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
               </p>
-              <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-2">
+              <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white m-0">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
               </p>
             </div>
-            
           </div>
 
-          <div className="static w-auto mt-5 left-0 bottom-0 order-10 pt-5 border-t border-[#c7f8ff] flex items-center text-white whitespace-nowrap md:relative md:left-[-41.5%] md:w-[104px] md:bottom-[-55px] md:mt-0 md:pt-0 md:border-t-0" aria-hidden="false">
-            <Image src="/assets/svgs/globe-solid-2.svg" alt="Language Icon" width={28} height={28} className="w-7 h-7 rounded-full inline-flex items-center justify-center text-[#c7f8ff] p-1" />
-            <span className="font-lato text-[14px] text-white">Français (FR)</span>
-          </div>
-
-          <div className="flex-1 grid grid-cols-1 gap-8 order-5 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-10">
-            <div className="flex flex-col w-full h-auto mt-0 lg:mt-[18px] lg:w-[188px] lg:h-[154px]">
-              <h4 className="font-['Red_Hat_Display'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-[10px]">
+          {/* Right section with columns */}
+          <div className="flex-1 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {/* Column 1: Nos Formations */}
+            <div className="flex flex-col">
+              <h4 className="font-['Red Hat Display', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white mb-3">
                 Nos Formations par catégorie
               </h4>
-              <ul className="list-none p-0 m-0 mb-3">
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Marketing et Digital</a>
+              <ul className="list-none p-0 m-0 space-y-1">
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Marketing et Digital
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Développement Commercial et Entrepreneuriat</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Développement Commercial et Entrepreneuriat
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Réseaux Sociaux et Contenus</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Réseaux Sociaux et Contenus
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Outils et Productivité</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Outils et Productivité
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Développement Personnel et Leadership</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Développement Personnel et Leadership
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <div className="flex flex-col w-full h-auto mt-0 lg:mt-[18px] lg:w-[157px] lg:h-[214px]">
-              <h4 className="font-['Red_Hat_Display'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-[10px]">
+            {/* Column 2: Vos droits */}
+            <div className="flex flex-col">
+              <h4 className="font-['Red Hat Display', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white mb-3">
                 Vos droits et nos devoirs
               </h4>
-              <ul className="list-none p-0 m-0 mb-3">
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">CGU /CGV</a>
+              <ul className="list-none p-0 m-0 space-y-1 mb-4">
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    CGU /CGV
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Mentions Légales</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Mentions Légales
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Politique de confidentialité</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Politique de confidentialité
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Règlement</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Règlement
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Notre Société</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Notre Société
+                  </a>
                 </li>
               </ul>
-              <div className="flex flex-col gap-2">
-                <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#40bfde] no-underline transition-opacity duration-200 hover:opacity-80 m-0">
+              <div className="flex flex-col gap-1">
+                <a
+                  href="#"
+                  className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#40bfde] no-underline transition-opacity duration-200 hover:opacity-80"
+                >
                   Accessibilité réduite disponible
                 </a>
-                <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#40bfde] no-underline transition-opacity duration-200 hover:opacity-80 m-0">
+                <a
+                  href="#"
+                  className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#40bfde] no-underline transition-opacity duration-200 hover:opacity-80"
+                >
                   Contact du référent
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-col w-full h-auto mt-0 lg:mt-[18px] lg:w-[168px] lg:h-[257px]">
-              <h4 className="font-['Red_Hat_Display'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-[10px]">À propos de nous</h4>
-              <ul className="list-none p-0 m-0 mb-3">
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Qui sommes nous ?</a>
+            {/* Column 3: À propos */}
+            <div className="flex flex-col">
+              <h4 className="font-['Red Hat Display', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white mb-3">
+                À propos de nous
+              </h4>
+              <ul className="list-none p-0 m-0 space-y-1 mb-4">
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Qui sommes nous ?
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Devenir Mentor</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Devenir Mentor
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">La Méthode Spot Formations</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    La Méthode Spot Formations
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Nous rejoindre</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Nous rejoindre
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Programme Organisme Certificateur</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Programme Organisme Certificateur
+                  </a>
                 </li>
               </ul>
-              <div className="flex flex-col mt-auto">
+              <div className="mt-auto">
                 <Image
                   src="/assets/badges/qualiopi.svg"
                   alt="Qualiopi"
@@ -132,45 +240,81 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col w-full h-auto mt-0 lg:mt-[18px] lg:w-[143px] lg:h-[215px]">
-              <h4 className="font-['Red_Hat_Display'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white m-0 mb-[10px]">Nous contacter</h4>
-              <ul className="list-none p-0 m-0 mb-3">
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Enseigner chez nous</a>
+            {/* Column 4: Nous contacter */}
+            <div className="flex flex-col">
+              <h4 className="font-['Red Hat Display', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'] font-bold text-[12px] leading-[18px] tracking-[0.02em] text-white mb-3">
+                Nous contacter
+              </h4>
+              <ul className="list-none p-0 m-0 space-y-1 mb-4">
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Enseigner chez nous
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">+33 0 00 00 00 00</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    +33 0 00 00 00 00
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="mailto:minimal@minimal.com" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">minimal@minimal.com</a>
+                <li>
+                  <a
+                    href="mailto:minimal@minimal.com"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    minimal@minimal.com
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Lorem Ipsum</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Lorem Ipsum
+                  </a>
                 </li>
-                <li className="mb-[6px] last:mb-0">
-                  <a href="#" className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]">Lorem Ipsum</a>
+                <li>
+                  <a
+                    href="#"
+                    className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-white no-underline transition-colors duration-200 hover:text-[#40bfde]"
+                  >
+                    Lorem Ipsum
+                  </a>
                 </li>
               </ul>
-              <div className="flex gap-3 mt-2 justify-start">
-                <a href="#" className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]">
-                  <i className="fab fa-instagram text-[16px]"></i>
+              <div className="flex gap-3 justify-start">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]"
+                >
+                  <i className="fab fa-instagram text-[14px]"></i>
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]">
-                  <i className="fab fa-instagram text-[16px]"></i>
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]"
+                >
+                  <i className="fab fa-linkedin-in text-[14px]"></i>
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]">
-                  <i className="fab fa-instagram text-[16px]"></i>
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-white no-underline transition-all duration-200 hover:bg-[#40bfde] hover:border-[#40bfde]"
+                >
+                  <i className="fab fa-twitter text-[14px]"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="p-[32px_0] flex flex-col gap-4 justify-center items-center text-left order-15 md:p-[56px_0] md:flex-row md:text-center">
-          <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#f5b942] mt-0 text-left md:mt-[18px] md:text-center">
-            Spot Formations 2025 © Tous les droits réservés
-          </p>
-        </div>
+        {/* Copyright section */}
+        <p className="font-lato font-normal text-[12px] leading-[18px] tracking-[0.02em] text-[#f5b942] mb-[9px] flex justify-center">
+          Spot Formations 2025 © Tous les droits réservés
+        </p>
       </div>
     </footer>
   );

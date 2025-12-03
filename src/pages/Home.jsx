@@ -1,3 +1,4 @@
+import Categories from "@/components/categories/categories";
 import Button from "@/components/common/button/Button";
 import Card from "@/components/common/card";
 import FinancingCard from "@/components/common/financing-card/financing-card";
@@ -14,6 +15,7 @@ export default function Home() {
       
       <div style={{overflow:"hidden"}}>
         <Hero />
+        <Categories />
       </div>
       <Footer />
     </>
