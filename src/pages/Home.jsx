@@ -7,6 +7,7 @@ import Hero from "@/components/common/hero/hero";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Navbar from "@/components/layout/navbar";
+import TopFormations from "@/components/topformations/TopFormations";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div style={{overflow:"hidden"}}>
         <Hero />
         <Categories />
+        <TopFormations />
       </div>
       <Footer />
     </>

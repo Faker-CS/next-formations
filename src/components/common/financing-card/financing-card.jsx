@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -20,9 +20,11 @@ export default function FinancingCard({ item }) {
       </div>
 
       <div className="flex justify-start items-start w-full mt-[6px]">
-        <Image 
-          src={`/assets/logos/financement/${item.logo}`} 
-          alt={item.title} 
+        <Image
+          width={24}
+          height={24}
+          src={`/assets/logos/financement/${item.logo}`}
+          alt={item.title}
           className="w-[140px] h-auto object-contain"
         />
       </div>
@@ -33,12 +35,14 @@ export default function FinancingCard({ item }) {
 
       <div className="h-[1px] bg-[#e6eef6] my-3" />
 
-      <a 
-        href={item.href} 
+      <a
+        href={item.href}
         className="mt-auto flex items-center gap-[6px] text-[#163054] font-semibold no-underline justify-center whitespace-nowrap mx-auto group"
       >
-        <Image 
-          src="/assets/icons/micro/arrow-right-circle.svg" 
+        <Image
+          width={14}
+          height={14}
+          src="/assets/icons/micro/arrow-right-circle.svg"
           alt={item.ctaLabel}
           className="w-6 h-6 rounded-full p-1 object-contain group-hover:bg-[#f4fbff]"
         />
