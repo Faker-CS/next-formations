@@ -5,12 +5,35 @@ import Button from "../common/button";
 export default function Entrepreneur() {
   return (
     <section className="w-full bg-white py-[60px]">
-      <div className="max-w-[1440px] h-auto py-0 mx-auto px-[20px] relative md:h-[320px] md:px-[40px] md:py-0">
-        <div className="absolute w-[112px] h-[67px] right-[20px] bottom-0 flex items-center justify-center rounded-lg z-10 md:right-[28px] md:top-[105px] md:bottom-auto">
-          <Image src="/vector.svg" alt="Spot Formations" width={112} height={67} className="object-contain" />
+      <div className="max-w-[1440px] h-auto py-0 mx-auto px-[15px] relative md:h-[320px] md:px-[40px] md:py-0">
+        <div className="absolute w-[112px] h-[67px] right-[35%] sm:right-[35%] bottom-[calc(100%+45px)] flex items-center justify-center rounded-lg z-10 md:right-[-28px] md:top-[105px] md:bottom-auto">
+          <Image
+            src="/vector.svg"
+            alt="Spot Formations"
+            width={112}
+            height={67}
+            className="object-contain"
+          />
         </div>
 
-        <div className="box-border flex flex-col items-start p-4 gap-4 bg-[#c7f8ff] rounded-xl relative w-full max-w-[calc(100%-15px)] h-auto left-[0] top-0 z-[3] mx-auto text-left md:absolute md:w-[483px] md:max-w-none md:h-[308px] md:left-[28px] md:top-[5px] md:p-6 md:mx-0 md:text-left">
+        <div className="mt-6 text-sm md:mt-[-80px] md:right-[-50px] md:text-left pb-8 transform md:translate-x-[100px]">
+          <h2 className="text-center font-red-hat-display font-bold text-[32px] leading-[40px] text-[#1b365e] mb-4 sm:text-[40px] sm:leading-[48px] md:text-[60px] md:leading-[64px] md:mb-6">
+            Spot Formations
+          </h2>
+          <p className="font-lato text-sm leading-6 text-[#1d1d1d] max-w-full px-0 mx-auto sm:text-base md:text-[18px] md:leading-6 md:max-w-[676px] md:px-0">
+            Découvrez nos{" "}
+            <strong>
+              solutions de formation et d&apos;accompagnement sur mesure
+            </strong>{" "}
+            aux entrepreneurs, et aux futurs indépendants tout au long de leur
+            parcours de lancement. Spot Formations assure une assistance
+            personnalisée qui s&apos;aligne sur les parcours uniques des
+            entreprises. La qualité de notre méthode est garantie par notre{" "}
+            <strong>processus d&apos;amélioration continue</strong>.
+          </p>
+        </div>
+
+        <div className="box-border flex flex-col items-start p-4 gap-4 bg-[#c7f8ff] rounded-xl relative w-full max-w-[calc(100%-15px)] h-auto left-[-2] top-0 z-[3] mx-auto text-left md:absolute md:w-[483px] md:max-w-none md:h-[308px] md:left-[-35px] md:top-[5px] md:p-6 md:mx-0 md:text-left">
           {/* Decorative before */}
           <div className="absolute bg-[#c7f8ff] rounded-2xl w-1 h-[calc(100%-32px)] right-[-8px] left-auto top-4 -z-[1] md:w-[5px] md:h-[276px] md:left-[486px] md:right-auto md:top-[16px]"></div>
           {/* Decorative after */}
@@ -33,32 +56,26 @@ export default function Entrepreneur() {
             </p>
           </div>
           <div className="static m-auto mb-4 order-[-1] w-[80px] h-[80px] rounded-full overflow-hidden md:absolute md:top-6 md:right-6 md:m-0 md:order-[0]">
-            <Image src="/assets/images/Chloé.png" alt="Chloé Lecomte" width={80} height={80} className="object-cover" />
+            <Image
+              src="/assets/images/Chloé.png"
+              alt="Chloé Lecomte"
+              width={80}
+              height={80}
+              className="object-cover"
+            />
           </div>
         </div>
-
-        <div className="mt-6 text-center md:mt-[320px]">
-          <h2 className="font-red-hat-display font-bold text-[32px] leading-[40px] text-[#1b365e] mb-4 sm:text-[40px] sm:leading-[48px] md:text-[60px] md:leading-[64px] md:mb-6">
-            Spot Formations
-          </h2>
-          <p className="font-lato text-sm leading-6 text-[#1d1d1d] max-w-full px-4 mx-auto sm:text-base md:text-[18px] md:leading-6 md:max-w-[900px] md:px-0">
-            Découvrez nos{" "}
-            <strong>
-              solutions de formation et d&apos;accompagnement sur mesure
-            </strong>{" "}
-            aux entrepreneurs, et aux futurs indépendants tout au long de leur
-            parcours de lancement. Spot Formations assure une assistance
-            personnalisée qui s&apos;aligne sur les parcours uniques des entreprises.
-            La qualité de notre méthode est garantie par notre{" "}
-            <strong>processus d&apos;amélioration continue</strong>.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-8 mt-6 px-4 justify-center md:flex-row md:gap-8 md:mt-10 md:px-0">
-          <Button variant="ghost" className="w-full max-w-full md:w-full md:max-w-[300px]">
+        <div className="flex flex-col gap-8 mt-6 px-0 justify-center md:flex-row md:gap-8 md:mt-5 md:px-0">
+          <Button
+            variant="ghost"
+            className="w-full max-w-full md:w-full md:max-w-[200px]"
+          >
             Se laisser guider
           </Button>
-          <Button variant="primary" className="hero__btn-primary w-full max-w-full md:w-full md:max-w-[300px]">
+          <Button
+            variant="primary"
+            className="hero__btn-primary w-full max-w-full md:w-full md:max-w-[252px]"
+          >
             Choisir votre formation
           </Button>
         </div>
