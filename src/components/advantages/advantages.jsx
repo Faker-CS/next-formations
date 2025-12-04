@@ -150,11 +150,10 @@ export default function Advantages() {
         <div className="flex flex-col items-start mt-10 gap-[35px] static z-[3] md:flex-row md:justify-center md:items-center md:mt-[-300px] md:relative">
           <Button
             variant="primary"
-            className="hero__btn-primary w-full md:w-auto"
+            className="hero__btn-primary w-full md:w-auto md:h-[58px] h-[58px]"
           >
             Découvrir toutes nos formations
           </Button>
-
           {/* Financement Badge - positioned differently on desktop */}
           <div className="static w-full max-w-[382px] h-auto flex text-center text-[12px] leading-[18px] text-[#1d1d1d] md:absolute md:w-[382px] md:h-10 md:left-[1045px] md:top-[90px] md:z-[6]">
             <Image
