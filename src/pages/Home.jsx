@@ -1,3 +1,4 @@
+import Advantages from "@/components/advantages/advantages";
 import Categories from "@/components/categories/categories";
 import Button from "@/components/common/button/Button";
 import Card from "@/components/common/card";
@@ -20,6 +21,7 @@ export default function Home() {
         <Categories />
         <TopFormations />
         <Entrepreneur />
+        <Advantages />
       </div>
       <Footer />
     </>
