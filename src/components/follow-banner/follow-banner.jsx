@@ -76,7 +76,7 @@ export default function FollowBanner() {
           </div>
 
           {/* Cards – mobile = stacked, desktop = side-by-side */}
-          <div className="flex flex-col gap-8 md:flex-row md:gap-5 md:justify-center">
+          <div className="flex flex-col gap-2 md:flex-row md:gap-5 md:justify-center">
             {visibleFormations.map((formation) => (
               <article
                 key={`${formation.category}-${formation.id}`}
