@@ -19,11 +19,13 @@ export default function Testimonials({ testimonial = mockTestimonial }) {
   return (
     <section className="w-full bg-gradient-to-b from-[#21365a] to-[#163054] h-auto text-white py-6 pb-8 relative md:h-[643px] md:py-14">
       {/* Background Image with Gradient Mask */}
-      <div 
+      <div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[95%] h-auto pointer-events-none z-0"
         style={{
-          maskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.45) 100%)',
-          WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.45) 100%)'
+          maskImage:
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.45) 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.45) 100%)",
         }}
       >
         <Image
@@ -37,7 +39,6 @@ export default function Testimonials({ testimonial = mockTestimonial }) {
       </div>
 
       <div className="max-w-[1200px] mx-auto flex flex-col items-center text-center px-[18px] gap-5 relative z-[1] md:flex-row md:items-start md:text-left md:gap-[100px] md:px-10">
-        
         {/* Left - Avatar (hidden on mobile) */}
         <div className="hidden flex-[0_0_200px] items-center justify-center relative md:flex">
           <div className="w-[225.91px] h-[300.94px] rounded-[169.42px] border-b-[6px] border-[#ff5758] shadow-[0_8px_24px_rgba(0,0,0,0.25)] -mt-10 bg-white z-[2] relative rotate-[33.83deg] overflow-hidden top-[105px]">
@@ -49,15 +50,6 @@ export default function Testimonials({ testimonial = mockTestimonial }) {
               className="object-cover relative -rotate-[33.83deg] scale-125 origin-center"
             />
           </div>
-          {/* Decorative rotated image */}
-          <Image
-            src="/assets/images/vector/vector-3.png"
-            alt=""
-            aria-hidden="true"
-            width={360}
-            height={360}
-            className="absolute w-[360px] h-auto -right-10 -top-[60px] rotate-[18deg] opacity-95 pointer-events-none z-0"
-          />
         </div>
 
         {/* Center - Content */}
@@ -68,32 +60,37 @@ export default function Testimonials({ testimonial = mockTestimonial }) {
           <H2 className="font-lato font-normal text-[15px] leading-[22px] tracking-normal text-white my-0 mb-5 w-full h-auto md:font-bold md:text-base md:leading-[26px] md:mb-5 md:w-[556px] md:h-[52px]">
             {testimonial.quoteTitle}
           </H2>
-          
+
           <p className="font-lato font-normal text-[13px] leading-[18px] tracking-normal text-white mb-6 w-full h-auto text-center md:text-sm md:leading-5 md:mb-4 md:w-[686px] md:h-[293px] md:text-left md:tracking-[0.02em]">
-            Martha est une entrepreneuse dont l&apos;activité ne court pas les rues.
-            À la fois commerçante, promotrice et importatrice, elle évolue dans
-            un secteur niche qui exige une communication ciblée et efficace.
-            Consciente de l&apos;importance d&apos;une présence en ligne performante,
-            Martha avait un projet web en cours, mais manquait des compétences
-            techniques pour le mener à bien de manière autonome. C&apos;est dans
-            cette optique qu&apos;elle a rejoint la formation WordPress proposée par
-            Spot Formations.
-            <br /> <br/>
-            La formation WordPress s&apos;est avérée être une véritable révélation
-            pour Martha. Grâce à une approche pédagogique axée sur la pratique,
-            elle a rapidement acquis les compétences nécessaires pour gérer son
-            site web en toute autonomie. « Les exercices pratiques étaient
-            vraiment l&apos;idéal pour moi », explique-t-elle.
+            Martha est une entrepreneuse dont l&apos;activité ne court pas les
+            rues. À la fois commerçante, promotrice et importatrice, elle évolue
+            dans un secteur niche qui exige une communication ciblée et
+            efficace. Consciente de l&apos;importance d&apos;une présence en
+            ligne performante, Martha avait un projet web en cours, mais
+            manquait des compétences techniques pour le mener à bien de manière
+            autonome. C&apos;est dans cette optique qu&apos;elle a rejoint la
+            formation WordPress proposée par Spot Formations.
             <br /> <br />
-            L&apos;expertise du formateur, tant sur le plan technique que pédagogique,
-            a été un facteur déterminant dans la réussite de Martha. « Chloé
-            était non seulement une experte de WordPress, mais elle savait aussi
-            adapter son enseignement à nos différents niveaux », souligne-t-elle. « Elle était toujours disponible pour répondre à nos questions
-            et elle a tout de suite compris mon métier et mon projet »
+            La formation WordPress s&apos;est avérée être une véritable
+            révélation pour Martha. Grâce à une approche pédagogique axée sur la
+            pratique, elle a rapidement acquis les compétences nécessaires pour
+            gérer son site web en toute autonomie. « Les exercices pratiques
+            étaient vraiment l&apos;idéal pour moi », explique-t-elle.
+            <br /> <br />
+            L&apos;expertise du formateur, tant sur le plan technique que
+            pédagogique, a été un facteur déterminant dans la réussite de
+            Martha. « Chloé était non seulement une experte de WordPress, mais
+            elle savait aussi adapter son enseignement à nos différents niveaux
+            », souligne-t-elle. « Elle était toujours disponible pour répondre à
+            nos questions et elle a tout de suite compris mon métier et mon
+            projet »
           </p>
-          
+
           <div className="mt-6 order-3 w-full flex justify-center md:mt-2 md:w-auto md:justify-start md:order-[0]">
-            <button className="flex items-center gap-2 text-white font-normal hover:gap-3 transition-all text-[15px] py-0 md:text-base md:py-0 md:w-auto md:font-bold" type="button">
+            <button
+              className="flex items-center gap-2 text-white font-normal hover:gap-3 transition-all text-[15px] py-0 md:text-base md:py-0 md:w-auto md:font-bold"
+              type="button"
+            >
               <Image
                 src="/assets/icons/micro/arrow-right-circle2.svg"
                 alt="Découvrir"
