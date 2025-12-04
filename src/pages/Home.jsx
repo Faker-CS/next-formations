@@ -10,6 +10,7 @@ import FollowBanner from "@/components/follow-banner";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Navbar from "@/components/layout/navbar";
+import Testimonials from "@/components/testimonials";
 import TopFormations from "@/components/topformations/TopFormations";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Entrepreneur />
         <Advantages />
         <FollowBanner />
+        <Testimonials />
       </div>
       <Footer />
     </>
