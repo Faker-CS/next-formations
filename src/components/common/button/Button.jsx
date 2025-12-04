@@ -20,10 +20,11 @@ export default function Button({
 }) {
   // Base classes for all buttons
   let baseClasses = `
+    relative whitespace-nowrap
     inline-flex items-center justify-center gap-2
     font-lato font-bold text-button-large leading-none
     rounded-lg cursor-pointer transition-all duration-200 ease-in-out
-    focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-principal-yellow
+    
   `;
 
   // Size-specific classes
@@ -36,7 +37,7 @@ export default function Button({
     case "primary":
       variantClasses = `
         bg-principal-gradient text-white border-none
-        hover:bg-secondary-orange hover:text-white
+        hover:bg-[#FC7F16] hover:bg-none hover:text-white
         active:bg-secondary-orange active:text-bg-beige
       `;
       break;
@@ -50,9 +51,11 @@ export default function Button({
     case "ghost":
       variantClasses = `
         bg-white text-secondary-orange border-2 border-transparent
-        bg-clip-padding [background-origin:border-box]
+        bg-clip-padding [background-origin:border-box,linear-gradient(white,white)_padding-box]
+        bg-white text-secondary-orange border-2 border-transparent
+        [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom,#FFBC42_26%,#FF5757_100%)_border-box]
         border-principal-gradient
-        hover:bg-secondary-orange hover:text-white hover:border-secondary-orange hover:-translate-y-0.5
+        hover:bg-[#FC7F16] hover:bg-none hover:text-white hover:border-secondary-orange
         active:bg-secondary-orange active:text-bg-beige active:border-secondary-orange
       `;
       break;
