@@ -7,6 +7,7 @@ import Form from "@/components/common/form/form";
 import Hero from "@/components/common/hero/hero";
 import Entrepreneur from "@/components/entrepreneur";
 import Evaluation from "@/components/evaluation";
+import FAQ from "@/components/faq";
 import FollowBanner from "@/components/follow-banner";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
@@ -30,6 +31,7 @@ export default function Home() {
         <Testimonials />
         <Trainers />
         <Evaluation />
+        <FAQ />
       </div>
       <Footer />
     </>

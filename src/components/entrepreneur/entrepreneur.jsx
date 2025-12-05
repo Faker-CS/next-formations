@@ -17,7 +17,7 @@ export default function Entrepreneur() {
         </div>
 
         <div className="mt-6 text-sm md:mt-[-80px] md:right-[-50px] md:text-left pb-8 transform md:translate-x-[100px]">
-          <h2 className="text-center font-red-hat-display font-bold text-[32px] leading-[40px] text-[#1b365e] mb-4 sm:text-[40px] sm:leading-[48px] md:text-[60px] md:leading-[64px] md:mb-6">
+          <h2 className="text-center font-red-hat-display  text-[32px] leading-[40px] text-[#1b365e] mb-4 sm:text-[40px] sm:leading-[48px] md:text-[60px] md:leading-[64px] md:mb-6">
             Spot Formations
           </h2>
           <p className="font-lato text-sm leading-6 text-[#1d1d1d] max-w-full px-0 mx-auto sm:text-base md:text-[18px] md:leading-6 md:max-w-[676px] md:px-0">
