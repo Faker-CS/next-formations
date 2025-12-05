@@ -12,6 +12,7 @@ import Header from "@/components/layout/header";
 import Navbar from "@/components/layout/navbar";
 import Testimonials from "@/components/testimonials";
 import TopFormations from "@/components/topformations/TopFormations";
+import Trainers from "@/components/trainers/trainers";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Advantages />
         <FollowBanner />
         <Testimonials />
+        <Trainers />
       </div>
       <Footer />
     </>
