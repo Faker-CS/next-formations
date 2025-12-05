@@ -6,13 +6,14 @@ import FinancingCard from "@/components/common/financing-card/financing-card";
 import Form from "@/components/common/form/form";
 import Hero from "@/components/common/hero/hero";
 import Entrepreneur from "@/components/entrepreneur";
+import Evaluation from "@/components/evaluation";
 import FollowBanner from "@/components/follow-banner";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Navbar from "@/components/layout/navbar";
 import Testimonials from "@/components/testimonials";
 import TopFormations from "@/components/topformations/TopFormations";
-import Trainers from "@/components/trainers/trainers";
+import Trainers from "@/components/trainers";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <FollowBanner />
         <Testimonials />
         <Trainers />
+        <Evaluation />
       </div>
       <Footer />
     </>

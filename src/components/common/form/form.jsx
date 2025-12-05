@@ -52,7 +52,7 @@ export default function Form({ title = "Démarrez votre nouvelle trajectoire :" 
           type="text"
           name="firstName"
           placeholder="Prénom"
-          className="w-full p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
+          className="w-full h-[45px] p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
           value={formData.firstName}
           onChange={handleChange}
           required
@@ -62,7 +62,7 @@ export default function Form({ title = "Démarrez votre nouvelle trajectoire :" 
           type="text"
           name="lastName"
           placeholder="Nom"
-          className="w-full p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
+          className="w-full h-[45px] p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
           value={formData.lastName}
           onChange={handleChange}
           required
@@ -72,7 +72,7 @@ export default function Form({ title = "Démarrez votre nouvelle trajectoire :" 
           type="email"
           name="email"
           placeholder="Email"
-          className="w-full p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
+          className="w-full h-[45px] p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
           value={formData.email}
           onChange={handleChange}
           required
@@ -83,7 +83,7 @@ export default function Form({ title = "Démarrez votre nouvelle trajectoire :" 
             type="text"
             name="countryCode"
             placeholder="+33"
-            className="flex-[0_0_70px] p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:flex-[0_0_80px] md:p-[14px_16px] md:text-[14px]"
+            className="w-[50px] h-[45px] p-[8px_10px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:text-[14px]"
             value={formData.countryCode}
             onChange={handleChange}
             required
@@ -95,7 +95,7 @@ export default function Form({ title = "Démarrez votre nouvelle trajectoire :" 
             maxLength={15}
             name="phone"
             placeholder="Portable"
-            className="flex-1 p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
+            className="flex-1 h-[45px] p-[12px_14px] font-lato font-normal text-[13px] leading-[20px] tracking-[0.02em] text-[#1B365E] bg-white border border-[#E0E0E0] rounded-[8px] outline-none transition-border-color duration-300 ease-in-out placeholder:text-[#9E9E9E] focus:border-[#40BFDE] md:p-[14px_16px] md:text-[14px]"
             value={formData.phone}
             onChange={handleChange}
             required
